@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="ToDo.js"></script>
+  </head>
+  <body>
+    <div id="items"></div>
+    <template id="itemTemplate"
+      ><div class="item">
+        <input type="checkbox" class="item-checked" />
+        <input
+          type="text"
+          class="item-description"
+          placeholder="Write a Task Here"
+        /></div
+    ></template>
+    <button class="btn" id="add">Add Task</button>
+    <button class="btn" id="clear">Clear Tasks</button>
+  </body>
+</html>
