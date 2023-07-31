@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Quiz</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <script type="module" defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <h1>Quiz</h1>
+      <div class="quiz">
+        <h2 id="question">Question Here</h2>
+        <div id="answer-btns">
+          <button class="btn">Ans1</button>
+          <button class="btn">Ans2</button>
+          <button class="btn">Ans3</button>
+          <button class="btn">Ans4</button>
+        </div>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+  </body>
 </html>
