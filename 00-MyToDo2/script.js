@@ -14,13 +14,16 @@ const addTask = () => {
   if (inputBox.value.trim() === "") {
     alert("Write a task to add!");
   } else {
-    let listItem = document.createElement("li");
-    listItem.innerHTML = inputBox.value;
-    listContainer.appendChild(listItem);
+    const markup = `
+    <li>${inputBox.value}</li>
+    `;
+    listContainer.insertAdjacentHTML("afterbegin", markup);
 
-    let spanItem = document.createElement("span");
-    spanItem.innerHTML = "\u00d7";
-    listItem.appendChild(spanItem);
+    // let listItem = document.createElement("li");
+    // const markup2 = `
+    // <span> </span>
+    // `;
+    // listContainer.insertAdjacentHTML("afterbegin", markup2);
   }
   inputBox.value = "";
   setData();
