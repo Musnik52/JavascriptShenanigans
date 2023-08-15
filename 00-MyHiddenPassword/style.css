@@ -18,6 +18,7 @@ body {
   margin: 300px auto;
   display: flex;
   align-items: center;
+  border: 5px solid #ccc;
 }
 
 .input-box input {
@@ -33,3 +34,12 @@ body {
   width: 35px;
   cursor: pointer;
 }
+
+#msg {
+  position: absolute;
+  bottom:165px;
+  color: #fff;
+  font-size: 15px;
+  display: none;
+}
+
