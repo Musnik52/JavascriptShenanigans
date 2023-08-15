@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/14cda3c233.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Your Name" id="name" />
+          <span id="error-name"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="number" placeholder="Enter a Phone Number" id="phone" />
+          <span id="error-phone"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter Email Address" id="email" />
+          <span id="error-email"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Message</label>
+          <textarea
+            rows="5"
+            placeholder="Enter Your Message"
+            id="msg"
+          ></textarea>
+          <span id="error-msg"></span>
+        </div>
+
+        <button id="btn-submit">Submit</button>
+        <span id="error-submit"></span>
+      </form>
+    </div>
+  </body>
+</html>
